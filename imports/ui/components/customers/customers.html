@@ -1,0 +1,15 @@
+<template name="Customers_list">
+  <h2>Customer list</h2>
+  <ul>
+    <li>
+      <form class="info-link-add">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email">
+        <input type="submit" name="submit" value="Add new customer">
+      </form>
+    </li>
+    {{#each customers}}
+      <li>{{name}}</li>
+    {{/each}}
+  </ul>
+</template>
