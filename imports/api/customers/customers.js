@@ -5,6 +5,8 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
 export const Customers = new Mongo.Collection('customers');
 
+console.log("imports/api/customers/customers.js file collection");
+
 /*let Schemas.Customers = new SimpleSchema({
     name: {
         type: String,

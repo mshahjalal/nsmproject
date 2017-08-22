@@ -2,6 +2,8 @@ import { Customers } from '/imports/api/customers/customers.js';
 import { Meteor } from 'meteor/meteor';
 import './customers.html';
 
+console.log("imports/ui/components/customers/customers.js file");
+
 Template.Customers_list.onCreated(function () {
   Meteor.subscribe('customers.all');
 });

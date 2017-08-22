@@ -15,3 +15,5 @@ Meteor.methods({
     });
   }
 });
+
+console.log("imports/api/customers/methods.js file");
