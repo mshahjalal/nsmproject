@@ -29,15 +29,15 @@ FlowRouter.route('/', {
 });
 
 /*
-This is best practice for dynamic imports, using as we need
-FlowRouter.route('/products/:_id', {
+This is best practice for dynamic imports, using as we need */
+FlowRouter.route('/products', {
   name: 'App.products',
-  async action() {
+  async action() {        
     await import('../../ui/pages/products/products.js');
     await import('../../ui/layouts/sidebar/sidebar.js');
-    BlazeLayout.render('App_body', { main: 'App_customers', sidebar: 'App_sidebar' });
+    BlazeLayout.render('App_body', { main: 'App_products', sidebar: 'App_sidebar' });
   },
-});*/
+});
 
 FlowRouter.notFound = {
   action() {
