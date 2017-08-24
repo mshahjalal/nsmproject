@@ -2,7 +2,7 @@
 
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
-import { Customers } from './customers.js';
+import { Customers } from '../both/collections.js';
 
 Meteor.methods({
   'customers.insert'(name, emails) {
@@ -16,4 +16,4 @@ Meteor.methods({
   }
 });
 
-console.log("imports/api/customers/methods.js file");
+console.log("imports/api/customers/server/methods.js file");

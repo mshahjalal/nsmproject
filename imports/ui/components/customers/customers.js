@@ -1,4 +1,4 @@
-import { Customers } from '/imports/api/customers/customers.js';
+import { Customers } from '/imports/api/customers/both/collections.js';
 import { Meteor } from 'meteor/meteor';
 import './customers.html';
 
